@@ -1,0 +1,13 @@
+
+input DeleteTaskInput {
+  taskId: ID!
+}
+
+mutation DeleteTask($input: DeleteTaskInput!) {
+  deleteTask(input: $input) {
+    id
+    title
+    description
+    __typename
+  }
+}

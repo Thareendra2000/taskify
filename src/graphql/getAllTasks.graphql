@@ -1,0 +1,8 @@
+query GetAllTasks {
+  getAllTasks {
+    id
+    title
+    description
+    __typename
+  }
+}

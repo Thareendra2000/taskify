@@ -1,0 +1,15 @@
+input DeleteTaskInput {
+  taskId: ID!,
+  title: String,
+  description: String,
+
+}
+
+mutation UpdateTask($input: UpdateTaskInput!) {
+  updateTask(input: $input) {
+    id
+    title
+    description
+    __typename
+  }
+}

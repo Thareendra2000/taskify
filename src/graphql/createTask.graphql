@@ -1,0 +1,13 @@
+input CreateTaskInput {
+    title: String,
+    description: String,
+}
+
+mutation CreateTask($input: CreateTaskInput!) {
+  createTask(input: $input) {
+    id
+    title
+    description
+    __typename
+  }
+}
